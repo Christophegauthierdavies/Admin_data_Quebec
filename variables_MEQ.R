@@ -116,15 +116,15 @@ df_appr <- df_appr %>%
 #Histoire - 4e secondaire
 df_appr <- df_appr %>%
   mutate (hist_4e = case_when(
-    CD_COURS_SOM %in% c("085404", "585404") ~ NOTE_MINST_BRUT
+    CD_COURS %in% c("085404", "585404") ~ NOTE_MINST_BRUT
   ))
 #Histoire - 4e secondaire - anglais
 df_appr <- df_appr %>%
   mutate (hist_4e_eng = case_when(
-    CD_COURS_SOM %in% c("085404") ~ NOTE_MINST_BRUT
+    CD_COURS %in% c("085404") ~ NOTE_MINST_BRUT
   ))
 #Histoire - 4e secondaire - français
 df_appr <- df_appr %>%
   mutate (hist_4e_fr = case_when(
-    CD_COURS_SOM %in% c("585404") ~ NOTE_MINST_BRUT
+    CD_COURS %in% c("585404") ~ NOTE_MINST_BRUT
   ))
